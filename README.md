@@ -1,2 +1,2 @@
 # fb-sports-bot
-Authors: KB
+Authors: KB, Tu

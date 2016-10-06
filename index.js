@@ -45,15 +45,14 @@ app.post('/webhook/', function (req, res) {
 const token = process.env.FB_PAGE_ACCESS_TOKEN
 
 function sendTextMessage(sender, text) {
-	let messageData = { text:text }
-	/*{
+	let messageData = {
 		"attachment":{
 			"type": "image",
 			"payload":{
 				"url": "http://4.bp.blogspot.com/_ucNfwCcSpSI/RzzR0owzzrI/AAAAAAAAAMw/U-jsB66a8Gs/s320/bondsabdul.jpg"
 			}
 	}
-}*/
+}
 	request({
 		url: 'https://graph.facebook.com/v2.6/me/messages',
 		qs: {access_token:token},

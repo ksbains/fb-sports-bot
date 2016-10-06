@@ -45,7 +45,7 @@ app.post('/webhook/', function (req, res) {
 const token = process.env.FB_PAGE_ACCESS_TOKEN
 
 function sendTextMessage(sender, text) {
-	let messageData = {text:text}
+	let messageData = { text:text }
 	/*{
 		"attachment":{
 			"type": "image",
@@ -61,6 +61,7 @@ function sendTextMessage(sender, text) {
 		json: {
 			recipient: {id:sender},
 			message: messageData,
+		}
 	}, function(error, response, body) {
 			if (error) {
 				console.log('Error sending messages: ', error)
